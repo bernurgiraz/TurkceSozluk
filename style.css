@@ -1,0 +1,189 @@
+/* GENEL STİLLER */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+}
+
+/* KAPSAYICI */
+.container {
+  width: 500px;
+  margin: 60px auto;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  position: relative;
+  text-align: center;
+}
+
+/* B ICONU */
+.header-icon {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background: #ec407a;
+  color: rgb(216, 206, 206);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* BAŞLIK */
+h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #b11151;
+}
+
+/* FORM */
+form {
+  display: flex;
+  border: 2px solid #f8bbd0;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ARAMA KUTUSU */
+#arama {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  border-radius: 50px 0 0 50px;
+}
+
+/* ARA BUTONU */
+button[type="submit"] {
+  padding: 14px 20px;
+  border: none;
+  background: #ec407a;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #d81b60;
+}
+
+
+/* SONUÇLAR BÖLÜMÜ */
+#sonuclar {
+  margin-top: 30px;
+  background: #fff0f5;
+  border: 1px solid #f8bbd0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+}
+
+#sonuclar h2 {
+  color: #c2185b;
+  margin-top: 0;
+}
+
+#sonuclar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sonuclar li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f3d1dc;
+}
+
+#sonuclar li:last-child {
+  border-bottom: none;
+}
+
+#sonuclar a {
+  color: #ec407a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#sonuclar a:hover {
+  text-decoration: underline;
+}
+
+/* OTOMATİK ÖNERİ STİLİ */
+.autocomplete-suggestions {
+  border: 1px solid #e91e63;
+  border-top: none;
+  max-width: 500px;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.autocomplete-suggestions li {
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.autocomplete-suggestions li:hover {
+  background-color: #fce4ec;
+}
+/* Minik kalpler */
+.heart {
+  position: absolute;
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+.heart.tr { top: 10px; right: 10px; }
+.heart.bl { bottom: 10px; left: 10px; }
+.heart.br { bottom: 10px; right: 10px; }
+
+.slogan {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  font-size: 16px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+
+.custom-btn {
+  background-color: #f06292;     /* pembe tonu */
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #ec407a;     /* daha koyu pembe sınır */
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-btn:hover {
+  background-color: white;
+  color: #f06292;
+  border-color: #f06292;
+  text-decoration: none;
+}
